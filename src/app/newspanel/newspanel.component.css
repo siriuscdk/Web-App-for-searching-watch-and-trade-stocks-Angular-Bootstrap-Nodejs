@@ -1,0 +1,40 @@
+.smallpanel{
+  background-color: #EEEEEE;
+  height: 250px;
+  cursor:pointer;
+}
+
+ .cropping{
+    width: 180px;
+    height: 80px;
+  }
+
+.center{
+  text-align: center;
+}
+
+.close {
+    height: 30px;
+}
+
+.close:focus {
+    outline: 0;
+}
+
+.refcolor{
+  color: gray;
+}
+
+.fa-twitter, .fa-facebook-square {
+    color: blue;
+    cursor:pointer;
+}
+
+.fa{
+  font-size: 50px;
+}
+
+.shareblock{
+outline: 2px solid #EEEEEE;
+}
+

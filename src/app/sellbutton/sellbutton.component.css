@@ -1,0 +1,34 @@
+.sellbutton{
+  width: 50px;
+  height: 35px;
+  color: white;
+  background-color: red;
+  border:none;
+
+}
+
+.sellbutton[disabled]{
+  background-color: #b5e6b7;
+}
+
+.close:focus {
+    outline: 0;
+}
+
+.sellinput{
+    border-color: #80D8FF;
+  box-shadow: 0 1px 1px #80D8FF inset, 0 0 8px #80D8FF;
+  outline: 0 none;
+}
+
+.sellbutton2{
+  width: 50px;
+  height: 35px;
+  color: white;
+  background-color: #4CAF50;
+  border:none;
+}
+
+.sellbutton2[disabled]{
+  background-color: #b5e6b7;
+}

@@ -1,0 +1,26 @@
+.spinner {
+  position: fixed;
+  left: 35%;
+}
+
+.holdbox{
+  border: 1px solid #BDBDBD;
+  cursor: pointer;
+}
+
+.closebutton{
+   margin-top: -15px;
+}
+
+.upcolor{
+  color:green;
+}
+
+.downcolor{
+  color:red;
+}
+
+.emtalert{
+  margin-top: 5%;
+  text-align: center;
+}

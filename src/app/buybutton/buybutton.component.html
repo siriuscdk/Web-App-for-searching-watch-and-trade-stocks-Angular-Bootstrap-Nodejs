@@ -1,0 +1,36 @@
+<button  class="buybuttonf" type="button" (click)="open(buymodal)">Buy</button>
+
+
+<ng-template #buymodal let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <div class="modal-title" id="modal-basic-title">{{stockdata.ticker}}</div>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+      </div>
+      <div class="modal-body">
+        <div>Current price: {{stockdata.last}}</div>
+        <div class="row">
+		  <div class="col-md-12">
+			Quantity
+			<input class="buyinput" 
+			type="number" 
+			name="numtobuy" 
+			placeholder="0" 
+			[(ngModel)]="boughtnum" 
+			(input)="oninput()" 
+			matInput 
+			[formControl]="myControl">
+		  </div>
+		</div>
+      </div>
+	  
+  <div class="modal-footer">
+		<div class="mr-auto">
+			Total: {{totalprice}}
+		</div>
+		<div class="text-right">
+			<button  class="buybutton" mat-stroked-button type="button" (click)="clickBuy()" (click)="modal.dismiss('Cross click')" [disabled]="buybuttondisable">Buy</button>
+		</div>
+  </div>
+</ng-template>

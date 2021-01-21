@@ -1,0 +1,80 @@
+.spinner {
+  position: fixed;
+  left: 35%;
+}
+
+.subtitle{
+  text-align: center;
+}
+
+.subtitleclosecolor{
+  color: black;
+  background-color: rgba(255,0,0,0.3);
+}
+
+.subtitleopencolor{
+  color: black;
+  background-color: rgba(0,255,0,0.3);
+}
+
+.comname{
+  color: gray;
+}
+
+.upcolor{
+  color:green;
+}
+
+.downcolor{
+  color:red;
+}
+
+.buybutton{
+  width: 50px;
+  height: 35px;
+  color: white;
+  background-color: #4CAF50;
+  border:none;
+}
+
+.buybutton[disabled]{
+  background-color: #b5e6b7;
+}
+
+.comtoppos{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.comtitle{
+    margin-left: 20%;
+}
+.dailychart{
+  width:100%;
+  height: 100%;
+}
+
+.topalert{
+ text-align: center;
+}
+.validalert{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.fillstar{
+  color: #FDD835;
+}
+
+.close {
+}
+
+.close:focus {
+    outline: 0;
+}
+
+.buyinput{
+    border-color: #80D8FF;
+  box-shadow: 0 1px 1px #80D8FF inset, 0 0 8px #80D8FF;
+  outline: 0 none;
+}

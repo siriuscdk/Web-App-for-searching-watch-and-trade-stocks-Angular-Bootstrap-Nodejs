@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.highcharts.com/stock/indicators/indicators.js"></script>
+
+<div *ngIf="isLoading" class="container">
+<h1 class="p-3">My Watchlist</h1>
+<div  class="spinner"><mat-spinner diameter="50"></mat-spinner></div>
+</div>
+
+<div *ngIf="!isLoading" class="container">
+  <h1 class="p-3">My Watchlist</h1>
+
+	<div *ngIf="isempty">
+		<div class="container">
+			  <div class="alert alert-warning emtalert" role="alert">
+			   Currently you don't have any stock in your watchlist.
+			</div>
+		</div>
+	</div>
+  <div *ngIf="!isempty" class="container">
+    <div *ngFor="let infoticker of infotickers" class="">
+        <div class="holdbox p-3" (click)="onClick(infoticker)">
+             <div class="row closebutton">
+                 <div class="col-12 text-right ">
+                 <button type="button" class="close" aria-label="Close" (click)="onDelete(infoticker)"><span aria-hidden="true">&times;</span></button>
+                  </div>
+             </div>
+             <div class="row">
+                <div class="col-6">
+                  <h3>{{infoticker.ticker}}</h3>
+                  <div> {{infoticker.companyname}} </div>
+                </div>
+                <div class="col-6 text-right" [class.upcolor]="infoticker.updown" [class.downcolor]="!infoticker.updown" >
+                  <h3>{{infoticker.last}}</h3>
+                  <div>
+                    <i *ngIf="infoticker.updown" class="fa fa-caret-up"></i>
+                    <i *ngIf="!infoticker.updown" class="fa fa-caret-down"></i>
+                  {{infoticker.change}}({{infoticker.perchangech}})
+                  </div>
+                </div>
+              </div>
+        </div>
+        <span>&nbsp;</span>
+    </div>
+  </div>
+</div>

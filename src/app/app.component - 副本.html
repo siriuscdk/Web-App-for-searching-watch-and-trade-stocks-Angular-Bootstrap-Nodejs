@@ -1,0 +1,41 @@
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+<app-header></app-header>
+
+<div>
+	<div class="title">STOCK SEARCH</div>
+
+	  <div class="all_search">
+
+      <mat-form-field appearance="none">
+		  <input class="mysearch-form border-right-0" type="text" name="search" placeholder="Enter stock name" [(ngModel)]="ticker" (input)="oninput()" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngIf="isLoading"><mat-spinner diameter="50"></mat-spinner></mat-option>
+            <ng-container *ngIf="!isLoading">
+            <mat-option *ngFor="let option of options; let i=index" [value]="option">
+            {{option+'|'+names[i]}}
+          </mat-option>
+          </ng-container>
+        </mat-autocomplete>
+      </mat-form-field>
+      
+      
+      <span>
+		    <button class="search-btn border-left-0" matSuffix mat-stroked-button type="button" (click)="onSubmit()">
+				  <i class="fa fa-search" style="color:#673AB7;"></i>
+		    </button>
+		  </span>
+	  </div>
+
+
+<app-footer></app-footer>
+
+
+
+
+
+

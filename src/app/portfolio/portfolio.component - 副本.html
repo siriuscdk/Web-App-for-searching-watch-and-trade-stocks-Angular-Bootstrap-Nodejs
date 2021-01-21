@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.highcharts.com/stock/indicators/indicators.js"></script>
+
+
+<div  *ngIf="isLoading" class="spinner"><mat-spinner diameter="50"></mat-spinner></div>
+<div *ngIf="!isLoading" class="container">
+  <h1 class="p-3">My Portfolio</h1>
+
+	<div *ngIf="isempty">
+		<div class="container">
+			  <div class="alert alert-warning emtalert" role="alert">
+			   Currently you don't have any stock.
+			</div>
+		</div>
+	</div>
+	
+  <div *ngIf="!isempty" class="container">
+    <div *ngFor="let infoticker of infotickers" class="">
+        <div class="holdbox container">
+             <div class="row topbox" (click)="onClick(infoticker)">
+
+				<h3>{{infoticker.ticker}}</h3>&nbsp;&nbsp;<h5 class="subtitle"> {{infoticker.companyname}}</h5> 
+
+             </div>
+             <div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-6">
+							<h5>Quantity:</h5> 
+						</div>
+						<div class="col-6 text-right">
+							<h5>{{infoticker.quantity}}</h5> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<h5>Avg.Cost/Share:</h5> 
+						</div>
+						<div class="col-6 text-right">
+							<h5>{{infoticker.avgcost}}</h5> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<h5>Total Cost:</h5> 
+						</div>
+						<div class="col-6 text-right">
+							<h5>{{infoticker.totcost}}</h5> 
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6" [class.upcolor]="infoticker.up" [class.downcolor]="infoticker.down">
+					<div class="row">
+						<div class="col-6">
+							<h5>
+							Change:
+							</h5> 
+						</div>
+						<div class="col-6 text-right">
+							<h5>
+							<i *ngIf="infoticker.up" class="fa fa-caret-up"></i>
+							<i *ngIf="infoticker.down" class="fa fa-caret-down"></i>
+							{{infoticker.change}}
+							</h5> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<h5>Current Price:</h5> 
+						</div>
+						<div class="col-6 text-right">
+							<h5>{{infoticker.last}}</h5> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<h5>Market Value:</h5> 
+						</div>
+						<div class="col-6 text-right">
+							<h5>{{infoticker.marketval}}</h5> 
+						</div>
+					</div>
+				</div>
+              </div>
+             <div class="row botbox">
+				<div class="col-12 p-2 text-right">
+						<button  class="buybutton" type="button" (click)="clickBuy()">Buy</button>
+						<button  class="sellbutton ml-3" type="button" (click)="clickSell()">Sell</button>
+				</div>	
+              </div>
+        </div>
+        <span>&nbsp;</span>
+    </div>
+  </div>
+</div>

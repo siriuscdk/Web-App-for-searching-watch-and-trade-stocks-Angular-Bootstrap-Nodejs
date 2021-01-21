@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.highcharts.com/stock/indicators/indicators.js"></script>
+
+<div *ngIf="isValid">
+<div  *ngIf="isLoading" class="spinner"><mat-spinner diameter="50"></mat-spinner></div>
+<div id="bigcon" *ngIf="!isLoading">
+    <div class="container">
+    <div *ngIf="removealert" class="topalert alert alert-danger alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      {{symbol}} removed from Watchlist
+    </div>
+    <div *ngIf="addalert" class="topalert alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      {{symbol}} added to Watchlist
+    </div>
+    <div class="row">
+      <div class="col-6 "><h1>{{symbol}}
+        <i *ngIf="starempty" (click)="onClickEmpty()" class="fa fa-star-o"></i>
+        <i *ngIf="!starempty" (click)="onClickFill()" class="fa fa-star fillstar"></i>
+        </h1></div>
+      <div class="col-6 text-right"><h1 [class.upcolor]="updown" [class.downcolor]="!updown">{{lastprice}}</h1></div>
+    </div>
+    <div class="row">
+      <div class="col-6 comname"><h3>{{companyname}}</h3></div>
+      <div class="col-6 text-right"><h4 [class.upcolor]="updown" [class.downcolor]="!updown">
+      <i *ngIf="updown" class="fa fa-caret-up"></i>
+      <i *ngIf="!updown" class="fa fa-caret-down"></i>
+      {{change}}({{perchangech}})</h4></div>
+    </div>
+    <div class="row">
+      <div class="col-6 ">{{tradingExchange}}</div>
+      <div class="col-6 text-right">{{time}}</div>
+    </div>
+    <div class="row">
+      <div class="col-12 "><button  class="buybutton" mat-flat-button type="button" >Basic</button>
+      </div>
+    </div>
+    <div class="row" class="subtitle">
+      <span *ngIf="!marketopen" class="subtitleclosecolor">Market Closed on {{marketendstr}} </span>
+      <span *ngIf="marketopen" class="subtitleopencolor">Market is Open</span>
+    </div>
+   
+
+      <div class="row">
+        <div class="col-12 ">
+            <mat-tab-group mat-stretch-tabs>
+              <mat-tab label="Summary">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                          <div class="container">
+                              <div class="row">
+                               <div class="col-6">
+                                         <div class="row"> High Price: {{respprice.high}} </div>  
+                                         <div class="row"> Low Price: {{respprice.low}} </div>
+                                         <div class="row"> Open Price: {{respprice.open}} </div>
+                                         <div class="row"> Prev. Close: {{respprice.prevClose}} </div>
+                                         <div class="row"> Volume: {{respprice.volume}} </div>  
+                                  </div>   
+                                  <div *ngIf="marketopen" class="col-6 text-right">
+                                         <div class="row"> Mid Price: {{respprice.mid}} </div>  
+                                         <div class="row"> Ask Price: {{respprice.askPrice}} </div>
+                                         <div class="row"> Ask Size: {{respprice.askSize}} </div>
+                                         <div class="row"> Bid Price: {{respprice.bidPrice}} </div>
+                                         <div class="row"> Bid Size: {{respprice.bidSize}} </div>  
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 comtoppos">
+                                  <h5 class="row comtitle">Company's Description </h5>
+                                  <div class="row"> Start Date: {{respcompany.startDate}} </div>
+                                  <div class="row"> {{respcompany.description}} </div>  
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="col-md-6">
+                              <highcharts-chart 
+                                  [Highcharts]="Highcharts" 
+                                  [constructorType]="'stockChart'" 
+                                  [options]="chartOptions"
+                                  	[callbackFunction]="chartCallback"
+                                    style="width: 100%; height: 400px; display: block;">
+                                  </highcharts-chart>
+                      </div>
+                     </div>
+                  </div>
+              </mat-tab>
+
+              <mat-tab label="Top News">
+              <app-newspanel [data]="newsdata"></app-newspanel>
+              </mat-tab>
+
+                <mat-tab label="Charts">
+                           <highcharts-chart 
+                                  [Highcharts]="Highcharts" 
+                                  [constructorType]="'stockChart'" 
+                                  [options]="histchart"
+                                  [callbackFunction]="chartCallback"
+                                  style="width: 100%; height: 400px; display: block;">
+                                  </highcharts-chart>
+
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+      </div>
+      
+     </div>
+</div>
+</div>
+
+<div *ngIf="!isValid">
+<div class="container">
+  <div class="alert alert-danger validalert" role="alert">
+   No results found. Please enter valid Ticker
+</div>
+</div>
+</div>
+
+
+
+

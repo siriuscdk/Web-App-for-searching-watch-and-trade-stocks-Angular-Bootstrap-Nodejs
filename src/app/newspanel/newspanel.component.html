@@ -1,0 +1,933 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<div class="container">
+      <div class="row">
+      <div *ngIf="showup[0]" class="col-sm-6 p-3 " >
+        <div class="smallpanel" (click)="open(mymodal0)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-1 center"><img [src]="imgsrc[0]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[0]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[1]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal1)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[1]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[1]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[2]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal2)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[2]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[2]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[3]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal3)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[3]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[3]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[4]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal4)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[4]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[4]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[5]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal5)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[5]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[5]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[6]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal6)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[6]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[6]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[7]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal7)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[7]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[7]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[8]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal8)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[8]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[8]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[9]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal9)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[9]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[9]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[10]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal10)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[10]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[10]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[11]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal11)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[11]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[11]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[12]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal12)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[12]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[12]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[13]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal13)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[13]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[13]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[14]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal14)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[14]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[14]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[15]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal15)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[15]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[15]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[16]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal16)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[16]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[16]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[17]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal17)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[17]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[17]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      <div class="row">
+      <div *ngIf="showup[18]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal18)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[18]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[18]}}</div>
+               </div>
+            </div>
+        </div></div>
+
+      <div *ngIf="showup[19]" class="col-sm-6 p-3 ">
+        <div class="smallpanel" (click)="open(mymodal19)">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="p-3 center"><img [src]="imgsrc[19]" class="cropping" alt="Place image title"></div>
+               </div>
+               <div class="col-sm-6">
+               `  <div>{{title[19]}}</div>
+               </div>
+            </div>
+        </div></div>
+    </div>
+
+      
+
+</div>
+
+   
+<ng-template #mymodal0 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[0]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[0]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[0]}}</h5>
+        <div>{{description[0]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[0]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[0]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[0]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal1 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[1]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[1]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[1]}}</h5>
+        <div>{{description[1]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[1]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[1]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[1]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal2 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[2]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[2]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[2]}}</h5>
+        <div>{{description[2]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[2]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[2]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[2]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal3 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[3]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[3]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[3]}}</h5>
+        <div>{{description[3]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[3]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[3]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[3]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal4 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[4]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[4]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[4]}}</h5>
+        <div>{{description[4]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[4]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[4]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[4]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal5 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[5]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[5]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[5]}}</h5>
+        <div>{{description[5]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[5]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[5]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[5]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal6 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[6]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[6]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[6]}}</h5>
+        <div>{{description[6]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[6]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[6]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[6]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal7 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[7]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[7]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[7]}}</h5>
+        <div>{{description[7]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[7]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[7]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[7]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal8 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[8]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[8]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[8]}}</h5>
+        <div>{{description[8]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[8]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[8]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[8]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal9 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[9]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[9]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[9]}}</h5>
+        <div>{{description[9]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[9]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[9]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[9]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+
+
+<ng-template #mymodal10 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[10]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[10]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[10]}}</h5>
+        <div>{{description[10]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[10]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[10]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[10]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal11 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[11]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[11]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[11]}}</h5>
+        <div>{{description[11]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[11]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[11]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[11]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal12 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[12]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[12]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[12]}}</h5>
+        <div>{{description[12]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[12]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[12]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[12]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal13 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[13]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[13]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[13]}}</h5>
+        <div>{{description[13]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[13]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[13]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[13]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal14 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[14]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[14]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[14]}}</h5>
+        <div>{{description[14]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[14]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[14]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[14]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal15 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[15]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[15]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[15]}}</h5>
+        <div>{{description[15]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[15]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[15]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[15]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal16 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[16]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[16]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[16]}}</h5>
+        <div>{{description[16]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[16]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[16]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[16]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal17 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[17]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[17]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[17]}}</h5>
+        <div>{{description[17]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[17]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[17]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[17]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal18 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[18]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[18]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[18]}}</h5>
+        <div>{{description[18]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[18]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[18]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[18]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+<ng-template #mymodal19 let-modal>
+      <div class="modal-header  flex-column position-relative">
+            <h3 class="modal-title" id="modal-basic-title">{{Publisher[19]}}</h3>
+            
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+             <div> {{Pubdate[19]}}</div>
+      </div>
+      <div class="modal-body">
+        <h5>{{title[19]}}</h5>
+        <div>{{description[19]}}</div>
+        <div class="refcolor">For more details click <span [innerHTML]="link[19]"></span></div>
+
+        <div class="shareblock">
+              <div>Share</div>
+              <div>
+              <a class="twitter-share-button"
+                href={{twlink[19]}}
+                target='_blank'>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              
+              
+              <a target="_blank"
+              href={{fblink[19]}}
+              class="fb-xfbml-parse-ignore">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              </div>
+        </div>
+      </div>
+</ng-template>
+
+
